@@ -1,6 +1,6 @@
 ﻿(function($) {
 	var body, tempDiv;
-	//小于或者等于unSplitLength，则不需要进行采用二分法
+	//文本内容长度小于或者等于unSplitLength，则不需要进行采用二分法
 	var unSplitLength = 30;
 
 	/**
@@ -23,6 +23,7 @@
 	
 	/**
 	 * 采用二分法截取文本，有利于性能
+	 * @param contentText 填充的文本内容
 	 */
 	var branchSplit = function(contentText){
 		var res = new Array(2);
